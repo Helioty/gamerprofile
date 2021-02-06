@@ -1,0 +1,7 @@
+{
+  "name": "gamerprofile",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
