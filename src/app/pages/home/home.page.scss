@@ -1,0 +1,39 @@
+#content-header {
+    max-width: 1080px;
+    margin: auto;
+}
+
+#content-header-2{
+    max-width: 1080px;
+    margin: auto;
+
+    a {
+        padding: 6px;
+    }
+}
+
+#content {
+    max-width: 1080px;
+    padding: 10px;
+    margin: auto;
+}
+
+ion-content {
+    --background: url('https://image.api.playstation.com/vulcan/img/rnd/202010/2417/tnCutdREPv6Pa7atqb8MTxGW.png?w=1920&thumb=false') center center / cover
+}
+
+// img {
+//     width: 100px;
+//     height: 160px;
+// }
+
+.session-list {
+
+    ion-item {
+        padding: 5px;
+        padding-left: 0;
+    }
+    img {
+        max-width: 90px;
+    }
+}

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MenuController, Platform } from '@ionic/angular';
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
@@ -14,5 +15,27 @@ export class AppComponent {
     { title: 'Spam', url: '/folder/Spam', icon: 'warning' },
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
-  constructor() {}
+  constructor(
+    private menu: MenuController,
+    private platform: Platform
+  ) {
+    this.initializeApp();
+  }
+
+  initializeApp() {
+    this.platform.ready().then(() => {
+      this.menu.enable(false);
+      this.initializeAppMobile();
+      // this.splashScreen.hide();
+      // this.statusBar.backgroundColorByHexString('#C40318');
+      // this.statusBar.hide();
+      // this.menu.enable(false);
+    });
+  }
+
+  initializeAppMobile() {
+    if (this.platform.is('mobile')) {
+      this.menu.enable(true);
+    }
+  }
 }

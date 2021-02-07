@@ -1,0 +1,77 @@
+<ion-content>
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+
+      <ion-title>Gamer Profile</ion-title>
+
+      <ion-buttons slot="end">
+        <ion-button fill="outline">Login</ion-button>
+        <ion-button fill="outline">Sign Up</ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+
+    <ion-toolbar>
+      <ion-grid id="content-header-2">
+        <ion-row>
+          <ion-col size="8.5">
+            <ion-row>
+              <a routerLink="profile">Top Games</a>
+              <a routerLink="profile">Top Platforms</a>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-grid id="content">
+    <ion-row>
+      <ion-col size="8.5">
+        <ion-row class="session">
+          <ion-list>
+            <img
+              src="https://image.api.playstation.com/vulcan/img/rnd/202010/2417/tnCutdREPv6Pa7atqb8MTxGW.png?w=1920&thumb=false"
+              alt="">
+          </ion-list>
+        </ion-row>
+      </ion-col>
+
+      <ion-col size="3.5">
+        <ion-list class="session-list">
+          <ion-list-header>
+            Lançamentos
+          </ion-list-header>
+
+          <ion-item lines="full">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1a/Naruto_Shippuden_UNS_2_Box_Art.jpg/220px-Naruto_Shippuden_UNS_2_Box_Art.jpg"
+              alt="">
+          </ion-item>
+          <ion-item lines="full">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1a/Naruto_Shippuden_UNS_2_Box_Art.jpg/220px-Naruto_Shippuden_UNS_2_Box_Art.jpg"
+              alt="">
+          </ion-item>
+          <ion-item lines="full">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1a/Naruto_Shippuden_UNS_2_Box_Art.jpg/220px-Naruto_Shippuden_UNS_2_Box_Art.jpg"
+              alt="">
+          </ion-item>
+        </ion-list>
+
+        <ion-list>
+          <ion-list-header>
+            Top Semanal
+          </ion-list-header>
+
+          <ion-item lines="full"></ion-item>
+          <ion-item lines="full"></ion-item>
+          <ion-item lines="full"></ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
