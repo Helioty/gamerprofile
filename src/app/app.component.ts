@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { MenuController, Platform } from '@ionic/angular';
+
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
@@ -24,7 +25,6 @@ export class AppComponent {
 
   initializeApp() {
     this.platform.ready().then(() => {
-      this.menu.enable(false);
       this.initializeAppMobile();
       // this.splashScreen.hide();
       // this.statusBar.backgroundColorByHexString('#C40318');
