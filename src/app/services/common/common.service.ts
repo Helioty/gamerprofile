@@ -43,8 +43,28 @@ export class CommonService {
     await alert.present();
   }
 
+  async showAlert(
+    title: string,
+    message: string,
+    closeText = 'FECHAR',
+  ): Promise<void> {
+    const buttons = [];
+
+    buttons.push({
+      text: closeText,
+      role: 'cancel'
+    });
+
+    const alert = await this.alertCtrl.create({
+      header: title,
+      message,
+      buttons
+    });
+    await alert.present();
+  }
+
   async showLoading(): Promise<void> {
-    this.loading =  await this.loadingCtrl.create({
+    this.loading = await this.loadingCtrl.create({
       spinner: 'circular'
     });
     this.loading.present();
